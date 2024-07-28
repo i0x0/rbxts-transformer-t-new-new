@@ -1,20 +1,25 @@
-# rbxts-transformer-t
+# rbxts-transformer-t-new-new
+
+Fork of: https://github.com/alihsaas/rbxts-transformer-t
+
 TypeScript transformer which converts TypeScript types to t entities
 
 # Installation
 
 To install this package run the following command:
 
-`npm i rbxts-transformer-t`
+`npm i rbxts-transformer-t-new-new`
+`yarn add rbxts-transformer-t-new-new`
+`pnpm i rbxts-transformer-t-new-new`
 
 # Usage
 
-To use this transformer you have to add `rbxts-transformer-t` to your `tsconfig.json` file in `compilerOptions` config
+To use this transformer you have to add `rbxts-transformer-t-new-new` to your `tsconfig.json` file in `compilerOptions` config
 
 ```json
 "plugins": [
 	{
-		"transform": "rbxts-transformer-t",
+		"transform": "rbxts-transformer-t-new-new",
 	}
 ]
 ```
@@ -22,7 +27,7 @@ To use this transformer you have to add `rbxts-transformer-t` to your `tsconfig.
 ## Before
 
 ```ts
-import { $terrify } from "rbxts-transformer-t";
+import { $terrify } from "rbxts-transformer-t-new-new";
 
 interface Data {
 	Color: Color3;
@@ -44,12 +49,13 @@ local tType = t.interface({
 	Material = t.enum(Enum.Material),
 })
 ```
- 
+
 # About this transformer
 
 ## What it can do
 
-1) Transform almost all TypeScript types into t models: 
+1. Transform almost all TypeScript types into t models:
+
 - null, undefined, void, unknown
 - string, boolean and number literals
 - string, boolean, number, any and thread types
@@ -59,8 +65,7 @@ local tType = t.interface({
 - roblox types such as Enum Axes
 - Enums to enum ex. Enum.Material => t.enum(Enum.Material)
 
-
-2) Compute expressions passed into it.
+2. Compute expressions passed into it.
 
 For example, this expression
 
@@ -68,7 +73,7 @@ For example, this expression
 $terrify<Omit<{ foo: 'bar', bar: number } & { data: string }, 'bar'>>()
 ```
 
-will be converted into 
+will be converted into
 
 ```lua
 local t = TS.import(script, TS.getModule(script, "t").lib.ts).t
@@ -81,13 +86,14 @@ t.interface({
 
 ## What it can't do
 
-1) Transform classes.
+1. Transform classes.
 
-2) Work with dynamic type parameters, i.e. `$terrify<T>()` in the following code will error:
+2. Work with dynamic type parameters, i.e. `$terrify<T>()` in the following code will error:
+
 ```typescript
-import { $terrify } from 'rbxts-transformer-t'
+import { $terrify } from "rbxts-transformer-t-new-new";
 
 function convertEntity<T>(entity: T) {
-  return $terrify<T>()
+	return $terrify<T>();
 }
 ```

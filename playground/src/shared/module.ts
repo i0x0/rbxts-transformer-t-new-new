@@ -1,4 +1,4 @@
-import { $terrify } from '../../..';
+import { $terrify } from "rbxts-transformer-t-new-new";
 
 interface ExtendedType {
 	Property: "!";
@@ -9,8 +9,8 @@ interface ReferenceType {
 }
 
 enum CustomEnum {
-    Foo,
-    Baz,
+	Foo,
+	Baz,
 }
 
 interface Type extends ExtendedType {
@@ -26,7 +26,7 @@ interface Type extends ExtendedType {
 	AnotherOptionalType?: BrickColor;
 
 	ArrayType: number[];
-    TupleType: [number, string, Enum.Material];
+	TupleType: [number, string, Enum.Material];
 
 	RobloxType: Enum;
 	AnotherRobloxType: Instance;
@@ -43,7 +43,7 @@ interface Type extends ExtendedType {
 	map: Map<Instance, string>;
 	instanceIsA: Folder;
 
-    CustomEnum: CustomEnum;
+	CustomEnum: CustomEnum;
 }
 
 const terrifiedType = $terrify<Type>();

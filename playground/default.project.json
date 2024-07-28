@@ -1,5 +1,6 @@
 {
 	"name": "roblox-ts-game",
+	"globIgnorePaths": ["**/package.json", "**/tsconfig.json"],
 	"tree": {
 		"$className": "DataModel",
 		"ServerScriptService": {
@@ -13,7 +14,10 @@
 			"rbxts_include": {
 				"$path": "include",
 				"node_modules": {
-					"$path": "node_modules/@rbxts"
+					"$className": "Folder",
+					"@rbxts": {
+						"$path": "node_modules/@rbxts"
+					}
 				}
 			},
 			"TS": {
@@ -34,7 +38,7 @@
 			"$properties": {
 				"FilteringEnabled": true
 			}
-		},				
+		},
 		"HttpService": {
 			"$className": "HttpService",
 			"$properties": {

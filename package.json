@@ -1,46 +1,46 @@
 {
-  "name": "rbxts-transformer-t",
-  "version": "1.1.5",
-  "description": "TypeScript transformer which converts TypeScript types to t entities",
-  "main": "out/index.js",
-  "scripts": {
-    "build": "tsc",
-    "prepare": "npm run build"
-  },
-  "author": "alihsaas",
-  "license": "ISC",
-  "dependencies": {
-    "@rbxts/t": "^2.1.3",
-    "get-installed-path": "^4.0.8",
-    "typescript": "^4.2.3"
-  },
-  "devDependencies": {
-    "@rbxts/types": "^1.0.469",
-    "@types/get-installed-path": "^4.0.0",
-    "@types/node": "^14.14.37",
-    "@typescript-eslint/eslint-plugin": "^4.21.0",
-    "@typescript-eslint/parser": "^4.21.0",
-    "eslint": "^7.23.0",
-    "eslint-config-prettier": "^6.15.0",
-    "eslint-plugin-prettier": "^3.1.4",
-    "prettier": "^2.2.1"
-  },
-  "directories": {
-    "example": "example"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/alihsaas/rbxts-transformer-t.git"
-  },
-  "bugs": {
-    "url": "https://github.com/alihsaas/rbxts-transformer-t/issues"
-  },
-  "homepage": "https://github.com/alihsaas/rbxts-transformer-t#readme",
-  "keywords": [
-    "t",
-    "@rbxts",
-    "@rbxts/t",
-    "transformer",
-    "interface"
-  ]
+	"name": "rbxts-transformer-t-new-new",
+	"version": "0.0.1",
+	"description": "TypeScript transformer which converts TypeScript types to t entities",
+	"main": "out/index.js",
+	"scripts": {
+		"build": "tsc",
+		"prepare": "npm run build"
+	},
+	"author": "alihsaas",
+	"license": "ISC",
+	"dependencies": {
+		"@rbxts/t": "^3.1.1",
+		"get-installed-path": "^4.0.8",
+		"typescript": "^5.5.4"
+	},
+	"devDependencies": {
+		"@rbxts/types": "^1.0.791",
+		"@types/get-installed-path": "^4.0.3",
+		"@types/node": "^20.14.12",
+		"@typescript-eslint/eslint-plugin": "^7.17.0",
+		"@typescript-eslint/parser": "^7.17.0",
+		"eslint": "^8.57.0",
+		"eslint-config-prettier": "^9.1.0",
+		"eslint-plugin-prettier": "^5.2.1",
+		"prettier": "^3.3.3"
+	},
+	"directories": {
+		"example": "example"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/unlimitedcoder2/rbxts-transformer-t-new-new.git"
+	},
+	"bugs": {
+		"url": "https://github.com/unlimitedcoder2/rbxts-transformer-t-new-new/issues"
+	},
+	"homepage": "https://github.com/unlimitedcoder2/rbxts-transformer-t-new-new#readme",
+	"keywords": [
+		"t",
+		"@rbxts",
+		"@rbxts/t",
+		"transformer",
+		"interface"
+	]
 }
