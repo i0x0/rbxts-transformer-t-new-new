@@ -7,7 +7,6 @@ import { buildType } from "./transformer";
 export default function transformer(
 	program: ts.Program,
 ): ts.TransformerFactory<ts.SourceFile> {
-	console.log("\n\nTesting\n\n");
 	return (context: ts.TransformationContext) => (file: ts.SourceFile) => {
 		const replaceIndexNode = (file: ts.SourceFile) => {
 			const importFilter = transformerUtil.is_t_ImportDeclaration(program);
@@ -56,8 +55,6 @@ function visitNode(
 	program: ts.Program,
 ): ts.VisitResult<ts.Node> | undefined {
 	if (isModuleImportExpression(node, program)) {
-		console.log(node);
-
 		return [
 			factory.createImportDeclaration(
 				undefined,

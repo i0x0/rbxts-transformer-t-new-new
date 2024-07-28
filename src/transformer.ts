@@ -45,6 +45,7 @@ const ROBLOX_TYPES = [
 	"UDim",
 	"UDim2",
 	"Vector2",
+	"Vector2int16",
 	"Vector3",
 	"Vector3int16",
 	"RBXScriptSignal",
