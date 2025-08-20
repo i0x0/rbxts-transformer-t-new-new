@@ -12,7 +12,7 @@
 	"dependencies": {
 		"@rbxts/t": "^3.1.1",
 		"get-installed-path": "^4.0.8",
-		"typescript": "^5.5.2"
+		"typescript": "~5.5.2"
 	},
 	"devDependencies": {
 		"@rbxts/types": "^1.0.791",
