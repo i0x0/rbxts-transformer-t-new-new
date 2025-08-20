@@ -1,5 +1,4 @@
 import ts, { factory } from "typescript";
-// @ts-expect-error
 import { getInstalledPathSync } from "get-installed-path";
 import path from "path";
 import fs from "fs";
